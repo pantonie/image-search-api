@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Search Abstraction Layer</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h3>User stories:</h3>
+		<ul class="list-group">
+			<li class="list-group-item list-group-item-info">I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+			<li class="list-group-item list-group-item-info">I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+			<li class="list-group-item list-group-item-info">I can get a list of the most recently submitted search strings.</li>			
+		</ul>
+		<h3>Example usage:</h3>
+		<p style="color: #751111; background: #dedddd">https://camper-api-project-antonie.c9users.io/api/imagesearch/microsoft%20logo%20greyscale?offset=10</p>
+		<p style="color: #751111; background: #dedddd">https://camper-api-project-antonie.c9users.io/api/latest</p>
+		<h3>Example output</h3>
+		<p style="color: #751111; background: #dedddd">[<br>
+&nbsp;{<br>
+&nbsp;&nbsp;"url": "https://www.bing.com/cr?IG=70DEAE921414473A8931E980770205E7&CID=16DB63524F8A62A305C469164E6D634E&rd=1&h=1OFQPuFdehDpaXN-JEIqjZ9PRp-0Dkp2_d4l8vU6-ck&v=1&r=https%3a%2f%2fwww.bison-smartwork.ch%2fassets%2fPartnerLogos%2f_resampled%2fGreyscaleImage7614729-SetWidth300-Microsoft-Logo-1.png&p=DevEx,5008.1",<br>
+&nbsp;&nbsp;"title": "Smartwork by Bison IT Services AG | Bison IT Services AG mehrfach ...",<br>
+&nbsp;&nbsp;"thumbnail": "https://tse2.mm.bing.net/th?id=OIP.HUS0AY-Sk1HGoiBeCbptDwEsB-&pid=Api",<br>
+&nbsp;&nbsp;"size": "12870 B"<br>
+&nbsp;}<br>]</p>
+		<p style="color: #751111; background: #dedddd">[<br>
+&nbsp;{<br>
+&nbsp;&nbsp;"date": "3/13/2017, 10:15:34 AM",<br>
+&nbsp;&nbsp;"request": "microsoft logo greyscale"<br>
+&nbsp;},<br>
+&nbsp;{<br>
+&nbsp;&nbsp;"date": "3/13/2017, 10:14:49 AM",<br>
+&nbsp;&nbsp;"request": "microsoft"<br>
+&nbsp;}<br>
+]</p>
+	</div>
+</body>
+</html>
